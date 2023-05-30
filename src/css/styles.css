@@ -9,6 +9,8 @@ body {
 /* Navigation bar styling */
 .navigation_bar {
     padding-top: 2em;
+    padding-left: 2.4em;
+    padding-bottom: 2em;
 }
 
 .navigation_bar li span {
@@ -45,21 +47,21 @@ body {
 }
 
 /* Main body styling - index page */
-.index_page {
+main {
     padding-left: 4em;
 }
 
-.index_page h1 {
+.index_page h1, .about_page h1 {
     font-size: 4em;
     font-weight: bold;
     padding-bottom: 0.5em;
 }
 
-.index_page p {
+.index_page p, .about_page p {
     font-size: 1.25em;
 }
 
-.index_page h2 {
+.index_page h2, .about_page h2 {
     font-size: 2em;
     font-weight: bold;
     padding-top: 0.5em;
@@ -70,12 +72,22 @@ body {
     padding-top: 1.5em;
 }
 
+/* Main page styling - about page */
+
+.about_page h2:first-of-type {
+    padding-top: 0em;
+}
+.about_page h2+p {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
 /* Footer styling */
 
 .footer {
     float: right;
     padding-left: 4em;
-    margin-top: 3.5em;
+    margin-top: 6em;
 }
 
 .footer ul li {
