@@ -51,7 +51,7 @@ main {
     padding-left: 4em;
 }
 
-.index_page h1, .about_page h1 {
+.index_page h1, .about_page h1, .projects_page h1 {
     font-size: 4em;
     font-weight: bold;
     padding-bottom: 0.5em;
@@ -61,7 +61,7 @@ main {
     font-size: 1.25em;
 }
 
-.index_page h2, .about_page h2 {
+.index_page h2, .about_page h2, .projects_page h2 {
     font-size: 2em;
     font-weight: bold;
     padding-top: 0.5em;
@@ -74,12 +74,35 @@ main {
 
 /* Main page styling - about page */
 
-.about_page h2:first-of-type {
+.about_page h2:first-of-type, .projects_page h2:first-of-type {
     padding-top: 0em;
 }
-.about_page h2+p {
+
+.about_page h2+p, .projects_page h2+p {
     font-style: italic;
     margin-bottom: 1em;
+}
+
+.about_page ul li {
+    display: inline;
+    color: black;
+    font-weight: bold;
+    background-color: white; 
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+/* Main page styling - projects page */
+
+.progress {
+    font-weight: bold;
+    color: lavender;
+}
+
+.projects_page p:first-of-type .progress {
+    color: #FB6F92;
 }
 
 /* Footer styling */
