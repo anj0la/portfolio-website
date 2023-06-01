@@ -2,8 +2,8 @@
 body {
     font-family: "lores-12", sans-serif;
     color: white;
-    background-image: linear-gradient(#FFC2D1, #FF8FAB);
-    background-attachment: fixed;
+    background-image: url("../resources/background-image.png");
+    background-size: cover;
 }
 
 /* Navigation bar styling */
@@ -51,6 +51,10 @@ main {
     padding-left: 4em;
 }
 
+.index_page .black_box {
+    margin-right: 50%;
+}
+
 .index_page h1, .about_page h1, .projects_page h1 {
     font-size: 4em;
     font-weight: bold;
@@ -72,6 +76,30 @@ main {
     padding-top: 1.5em;
 }
 
+.index_page ul li {
+    display: inline;
+}
+
+.index_page ul li button {
+    font-size: 1.5em;
+    font-family: "lores-12", sans-serif;
+    color: white;
+    background-color: transparent; 
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 0.5em;
+}
+
+.index_page ul li button:hover {
+    color: black;
+    background-color: white; 
+}
+  
 /* Main page styling - about page */
 
 .about_page h2:first-of-type, .projects_page h2:first-of-type {
@@ -94,6 +122,16 @@ main {
     text-align: center;
 }
 
+.black_box {
+    background-color: rgba(0,0,0, .5);
+    border: 10px solid rgba(0,0,0, .1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-right: 3.5em;
+    padding-bottom: 1em;
+}
+
 /* Main page styling - projects page */
 
 .progress {
@@ -113,31 +151,66 @@ main {
     margin-top: 6em;
 }
 
-.footer ul li {
-    display: inline;
-}
-
-.footer ul li button {
-    font-size: 1.5em;
-    font-family: "lores-12", sans-serif;
+  /* Card features */
+  .card {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    background-color: rgba(0,0,0, .5);
+    border: 10px solid rgba(0,0,0, .1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .card-image {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    flex: 1 1 auto;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
     color: white;
-    background-color: transparent; 
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .card-button {
     display: inline-block;
-    cursor: pointer;
-    margin-right: 0.5em;
-}
-
-.footer ul li button:hover {
+    color: white;
+    background-color: #FB6F92; 
+    border: 2px solid #FB6F92;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
     color: black;
     background-color: white; 
-}
+    border-color: white;
 
-.carousel {
-    width: 800px;
-    height: 450px;
   }
+
+  .container-of-cards {
+    margin: auto;
+    width: 50%;
+  }
+  
+  
