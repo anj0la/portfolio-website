@@ -2,13 +2,15 @@
 body {
     font-family: "lores-12", sans-serif;
     color: white;
-    background-image: linear-gradient(#FFC2D1, #FF8FAB);
-    background-attachment: fixed;
+    background-image: url("../resources/background-image.png");
+    background-size: cover;
 }
 
 /* Navigation bar styling */
 .navigation_bar {
     padding-top: 2em;
+    padding-left: 2.4em;
+    padding-bottom: 2em;
 }
 
 .navigation_bar li span {
@@ -45,21 +47,25 @@ body {
 }
 
 /* Main body styling - index page */
-.index_page {
-    padding: 4em;
+main {
+    padding-left: 4em;
 }
 
-.index_page h1 {
+.index_page .black_box {
+    margin-right: 50%;
+}
+
+.index_page h1, .about_page h1, .projects_page h1 {
     font-size: 4em;
     font-weight: bold;
     padding-bottom: 0.5em;
 }
 
-.index_page p {
+.index_page p, .about_page p {
     font-size: 1.25em;
 }
 
-.index_page h2 {
+.index_page h2, .about_page h2, .projects_page h2 {
     font-size: 2em;
     font-weight: bold;
     padding-top: 0.5em;
@@ -70,19 +76,11 @@ body {
     padding-top: 1.5em;
 }
 
-/* Footer styling */
-
-.footer {
-    float: right;
-    padding-left: 4em;
-    margin-top: -1em;
-}
-
-.footer ul li {
+.index_page ul li {
     display: inline;
 }
 
-.footer ul li button {
+.index_page ul li button {
     font-size: 1.5em;
     font-family: "lores-12", sans-serif;
     color: white;
@@ -97,8 +95,122 @@ body {
     margin-right: 0.5em;
 }
 
-.footer ul li button:hover {
+.index_page ul li button:hover {
     color: black;
     background-color: white; 
 }
+  
+/* Main page styling - about page */
 
+.about_page h2:first-of-type, .projects_page h2:first-of-type {
+    padding-top: 0em;
+}
+
+.about_page h2+p, .projects_page h2+p {
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.about_page ul li {
+    display: inline;
+    color: black;
+    font-weight: bold;
+    background-color: white; 
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.black_box {
+    background-color: rgba(0,0,0, .5);
+    border: 10px solid rgba(0,0,0, .1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0.5em;
+    border-radius: 10px;
+    margin-right: 3.5em;
+    padding-bottom: 1em;
+}
+
+/* Main page styling - projects page */
+
+.progress {
+    font-weight: bold;
+    color: lavender;
+}
+
+.projects_page p:first-of-type .progress {
+    color: #FB6F92;
+}
+
+/* Footer styling */
+
+.footer {
+    float: right;
+    padding-left: 4em;
+    margin-top: 6em;
+}
+
+  /* Card features */
+  .card {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    background-color: rgba(0,0,0, .5);
+    border: 10px solid rgba(0,0,0, .1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .card-image {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    flex: 1 1 auto;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .card-button {
+    display: inline-block;
+    color: white;
+    background-color: #FB6F92; 
+    border: 2px solid #FB6F92;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
+    color: black;
+    background-color: white; 
+    border-color: white;
+
+  }
+
+  .container-of-cards {
+    margin: auto;
+    width: 50%;
+  }
+  
+  
